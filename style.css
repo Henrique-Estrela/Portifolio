@@ -200,8 +200,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background:#481015;
+    color: #2c3e50;
+    background:#fff;
 }
 
 section.success a,
@@ -210,7 +210,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: #82c1ff;
 }
 
 @media(max-width:767px) {
@@ -227,7 +227,10 @@ section.success a.active {
   border-radius:50%;
 }
 /* Portfolio css */
-
+#portfolio{
+    color: #fff;
+    background: #481015;
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -250,7 +253,7 @@ section.success a.active {
 #logo_flex{
     display: flex;
     position: absolute;
-    left: 200px;
+    
     
 }
 
@@ -259,7 +262,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #481015;
+    background: #f4f4f4;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
