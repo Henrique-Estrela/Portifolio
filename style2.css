@@ -1,0 +1,256 @@
+body {
+    overflow-x: hidden; 
+	width: 100%;
+	align: center;
+	font-family: 'Alegreya', sans-serif;
+	color: #fff;
+    background: #481015;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #9c111d;
+}
+body::-webkit-scrollbar-thumb{
+
+    background-color: #ffffffa7;
+}
+
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #481015;
+    padding:100px;
+   }
+   
+   header .container {
+       padding-top: 100px;
+       padding-bottom: 50px;
+   }
+   
+   header img {
+       display: block;
+       margin: 0 auto 20px;
+   }
+   
+   header .intro-text .name {
+       display: block;
+       text-transform: uppercase;
+       font-family: Roboto Slab,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size: 2em;
+       font-weight: 700;
+   }
+   
+   header .intro-text .skills {
+       font-size: 1.25em;
+       font-weight: 300;
+   }
+   
+   @media(min-width:768px) {
+       header .container {
+           padding-top: 200px;
+           padding-bottom: 100px;
+       }
+   
+       header .intro-text .name {
+           font-size: 4.75em;
+       }
+   
+       header .intro-text .skills {
+           font-size: 1.75em;
+       }
+   }
+   
+   @media(min-width:768px) {
+       .navbar-fixed-top {
+           -webkit-transition: padding .3s;
+           -moz-transition: padding .3s;
+           transition: padding .3s;
+       }
+   
+       .navbar-fixed-top .navbar-brand {
+           font-size: 2em;
+           -webkit-transition: all .3s;
+           -moz-transition: all .3s;
+           transition: all .3s;
+       }
+   
+       .navbar-fixed-top.navbar-shrink {
+           padding: 10px 0;
+       }
+   
+       .navbar-fixed-top.navbar-shrink .navbar-brand {
+           font-size: 1.5em;
+       }
+   }
+   
+   .navbar {
+       text-transform: uppercase;
+       font-family: Roboto Slab,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-weight: 700;
+   }
+   
+   .navbar a:focus {
+       outline: 0;
+   }
+   
+   .navbar .navbar-nav {
+       letter-spacing: 2px;
+   }
+   
+   .navbar .navbar-nav li a:focus {
+       outline: 0;
+   }
+   
+   .navbar-default,
+   .navbar-inverse {
+       border: 0;
+       background: #3c0b0f !important;
+   }
+   .navbar-default .navbar-nav>li>a{
+     color:#fff !important;
+   }
+   .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+     color:#fff;
+   }
+   .navbar-brand{
+      color:#C5C5C5 !important;
+   }
+
+
+
+
+
+
+#left {
+	width: 40%;
+	background-color: #ffffff;
+	border: 1px solid #eee;
+	box-shadow: 10px 5px 10px -5px #666;
+	padding: 1em 1em 1em 1em;
+	margin: 1em;
+	float: left;
+}
+
+#contato {
+	list-style-type: none;
+}
+
+#main {
+	width: 50%;
+	float: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding: 5px auto;
+	text-shadow: 1px 1px 0px #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	color: #fff;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+    color: #481015;
+	display: block;
+	text-align: center;
+	margin: 0 0 10px 0;
+	font-size: 1.5em;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #774F38;
+	background-image: linear-gradient(to right, #ccc, #774F38, #ccc);
+}
+
+.hrMin {
+	width: 70%;
+}
+
+a {
+	font-size: 1em;
+	text-decoration: none;
+	color: #481015;
+}
+
+a:hover {
+	color: #774F38;
+}
+
+p {
+	margin: 0;
+	text-indent: 1em;
+	font-size: 1em;
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	line-height: 120%;
+}
+#p{
+    color: #481015;
+}
+
+span {
+	margin: 0;
+	word-wrap: break-word;
+	text-indent: 1.5em;
+	font-size: 0.8em;
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	line-height: 100%;
+	font-style: italic;
+}
+#skills span {
+		font-family: 'Josefin Sans', sans-serif;
+    top: -33px;
+    left: 2%;
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+		font-style: normal;
+}
+
+progress {
+		box-shadow: 10px 10px 10px -5px #666;
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2.5em;
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #481015;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
+
+@media screen and (max-width: 600px) {
+	#left {
+		width: 80%;
+	}
+	#main {
+		width: 98%;
+	}
+}
