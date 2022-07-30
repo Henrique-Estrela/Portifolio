@@ -13,12 +13,16 @@
 
 <body translate="no" id="page-top" class="index">
   
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 
+  <div id="preloader">
+    
+  </div>
+
   <!--navigation-->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav_topo">
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data="" taget="#bs-example-navbar-collapse-1">
@@ -155,6 +159,7 @@
                             <img src="img/cronos.png" class="img-responsive">
                       </a>
               </div>
+              
 
               
 
@@ -247,10 +252,30 @@
   
   
   
+ <script>
+  let nav = document.getElementById("nav_topo");
   
+  let loader = document.getElementById("preloader");
+
+  let body = document.getElementById("page-top");
+
+
+
+  nav.style.display = "none";
+  body.style.overflow = "hidden";
+
+  
+
+  window.addEventListener("load", function() {
+    nav.style.display = "";
+    loader.style.display = "none";
+    body.style.overflow = "";
+  })
+ </script> 
 
 
 
 
  
-</body></html>
+</body>
+</html>
