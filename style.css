@@ -1,4 +1,3 @@
-
 body {
     overflow-x: hidden;
 }
@@ -136,7 +135,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 1.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -149,6 +148,22 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+    .cube{
+        position: relative;
+        display: flex;
+        margin-top: 15px;
+        margin-right: 20px;
+        
+        
+    }
+    .sign {
+        position: relative;
+        color: rgb(14, 6, 6);
+        bottom: 10px;
+        font-size: 10px;
+      }
+
+
 }
 
 .navbar {

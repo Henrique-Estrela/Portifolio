@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden; 
 	width: 100%;
+    margin-top: 4em;
 	align: center;
 	font-family: 'Alegreya', sans-serif;
 	color: #fff;
@@ -90,7 +91,9 @@ header {
        font-family: Roboto Slab,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
        font-weight: 700;
    }
-   
+
+
+
    .navbar a:focus {
        outline: 0;
    }
@@ -119,17 +122,30 @@ header {
    }
 
 
-
-
+    #logo_flex{
+        display: flex;
+        margin-left: 2em;
+        
+    }
+    #letra{
+        margin: 0;
+        margin-left: auto;
+        margin-right: 40%;
+        display: flex;
+        position: relative;
+        
+    }
 
 
 #left {
 	width: 40%;
+    display: grid;
 	background-color: #ffffff;
 	border: 1px solid #eee;
 	box-shadow: 10px 5px 10px -5px #666;
 	padding: 1em 1em 1em 1em;
 	margin: 1em;
+    border-radius: 1em;
 	float: left;
 }
 
@@ -138,6 +154,7 @@ header {
 }
 
 #main {
+    margin-left: 2em;
 	width: 50%;
 	float: left;
 }
@@ -181,7 +198,7 @@ hr {
 }
 
 .hrMin {
-	width: 70%;
+	width: 80%;
 }
 
 a {
@@ -197,7 +214,7 @@ a:hover {
 p {
 	margin: 0;
 	text-indent: 1em;
-	font-size: 1em;
+	font-size: 1.2rem;
 	font-family: 'Alegreya', serif;
 	font-weight: normal;
 	line-height: 120%;
@@ -253,4 +270,90 @@ progress::-moz-progress-bar {
 	#main {
 		width: 98%;
 	}
+}
+
+
+
+
+
+
+.navbar-collapse,
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0
+}
+
+
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+    max-height: 340px
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 200px
+    }
+}
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width:768px) {
+
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0
+    }
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px
+}
+
+@media (min-width:768px) {
+    .navbar-static-top {
+        border-radius: 0
+    }
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+@media (min-width:768px) {
+
+    .navbar-fixed-bottom,
+    .navbar-fixed-top {
+        border-radius: 0
+    }
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px
+}
+#voltar{
+    color: #C5C5C5 ;
+    font-size: 1.8em;
+
+}
+
+#voltar:hover{
+    color: #000;
 }
