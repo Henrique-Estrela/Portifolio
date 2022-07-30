@@ -1,15 +1,25 @@
 body {
     overflow-x: hidden;
+    
 }
 
 #preloader{
-    background: #000 url(https://i.gifer.com/7sYl.gif) no-repeat center center;
-    background-size: 50%;
+    background: #000 url(img/loader.gif) no-repeat center top;
+    background-size: 40%;
    
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
+
+}
+#loading{
+    background: url(img/loading.gif) no-repeat center bottom;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 110;
 
 }
 

@@ -20,6 +20,7 @@
   <div id="preloader">
     
   </div>
+  <div id="loading"></div>
 
   <!--navigation-->
   <nav class="navbar navbar-default navbar-fixed-top" id="nav_topo">
@@ -256,21 +257,26 @@
   let nav = document.getElementById("nav_topo");
   
   let loader = document.getElementById("preloader");
+  let loading = document.getElementById("loading");
 
   let body = document.getElementById("page-top");
-
-
 
   nav.style.display = "none";
   body.style.overflow = "hidden";
 
+  setTimeout(function(){        
+
+  nav.style.display = "";
+  body.style.overflow = "";
+  loader.style.display = "none";
+  loading.style.display = "none";
+
   
 
-  window.addEventListener("load", function() {
-    nav.style.display = "";
-    loader.style.display = "none";
-    body.style.overflow = "";
-  })
+  
+
+   
+}, 3000);
  </script> 
 
 
