@@ -78,7 +78,7 @@ header {
        }
    
        .navbar-fixed-top.navbar-shrink {
-           padding: 10px 0;
+           padding: 10px 10px;
        }
    
        .navbar-fixed-top.navbar-shrink .navbar-brand {
