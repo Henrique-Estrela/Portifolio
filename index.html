@@ -28,11 +28,30 @@
                 <li><a href="#">Contato</a></li>
             </ul>
             <div class="links">
-                <a href=""> <i class="fab fa-linkedin" aria-hidden="true"></i> </a>
-                <a href=""> <i class="fab fa-github" aria-hidden="true"></i> </a>
+                <a href="#"> <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fab fa-github" aria-hidden="true"></i></a>
 
             </div>
         </nav>
+        <section class="fachada">
+            <div class="apresentacao">
+                <div class="cols cols0">
+                    <!-- <div id="star"></div> -->
+                    <span class="topline">Olá</span>
+                    <h1 class="text">Sou <span class="multiText"></span></h1>
+                    <p>Medir o progresso da programação por linhas de código é como medir o progresso da construção de aeronaves em termos de peso.</p>
+                </div>
+                <div class="cols cols1">
+                    <div class="imgbox">
+                        <img src="assets/img/splash.png" id="splash">
+                        <img src="assets/img/logo.png" >
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        
 
 
 
@@ -45,6 +64,16 @@
     <!-- Scripts -->
 
     <script src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["Dev Web", "designer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay : 1500,
+        })
+    </script>
     
 </body>
 </html>

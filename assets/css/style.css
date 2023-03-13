@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Rubik Bubbles', cursive;
 }
 
 body{
@@ -28,6 +29,188 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .container{
     display: none;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.logo{
+    display: flex;
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--secundaria);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 2.5rem;
+}
+
+.navItems li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--texto);
+    letter-spacing: 3px;
+    text-transform: capitalize;
+
+}
+
+.navItems li:hover a, .links a:hover{
+    color: var(--secundaria);
+    transition: all 0.7s;
+}
+
+.links a{
+    font-size: 2em;
+    color: var(--texto);
+    margin: 25px 30px;
+}
+
+.fachada{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.apresentacao{
+    margin-top: 10rem;
+}
+.cols{
+    width: 50%;
+    margin-bottom: -18rem;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--texto);
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 20px;
+    bottom: 10px;
+    background-color: var(--secundaria);
+}
+
+.cols0 h1 {
+    display: block;
+    font-size: 6em;
+    width: max-content;
+    font-weight: 900;
+    color: var(--texto);
+}
+.multiText{
+    text-transform: capitalize;
+    color: var(--secundaria);
+}
+.cols0 p{
+   width: 90%;
+   display: block;
+   font-size: 1.1em; 
+   color: var(--texto);
+}
+
+
+.imgbox{
+    position: relative;
+    left: 40rem;
+    }
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(90% - -64px);
+    top: -100px;
+    right: 0;
+    animation: User 4s linear infinite;
+}
+
+
+@keyframes User{
+    50%{
+        right: 20px;
+        top: -90px;
+    }
+}
+
+#splash{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    animation: Splash 5s linear infinite;
+
+}
+@keyframes Splash{
+    50%{
+        top: -90px;
+        right: -20px;
+    }
+}
+
+
+
+#star {
+    margin: 100px;
+    position: absolute;
+    z-index: 1000000;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #000;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+#star:before {
+    border-bottom: 80px solid #000;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+#star:after {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #000;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
 }
