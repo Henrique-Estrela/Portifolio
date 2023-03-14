@@ -1,7 +1,9 @@
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("nav");
-    header.classList.toggle("sticky", window.scrollY > 0);
+    var seta = document.querySelector(".seta a img");
+    header.classList.toggle("navfixed", window.scrollY > 0);
+    seta.classList.toggle("none", window.scrollY > 500);
 })
 
 
