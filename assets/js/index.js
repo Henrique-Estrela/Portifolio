@@ -6,7 +6,7 @@ window.addEventListener("scroll", function(){
     seta.classList.toggle("none", window.scrollY > 500);
 })
 
-const menuItems = document.querySelectorAll('.nav ul li a[href^="#"], div.seta a');
+const menuItems = document.querySelectorAll('.nav ul li a[href^="#"]');
 
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
