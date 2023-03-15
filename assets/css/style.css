@@ -67,13 +67,12 @@ nav{
     z-index: 111;
     position: absolute;
     margin-top: -80px;
-
 }
 
 .navfixed{
     z-index: 11111;
     position: fixed;
-    background-color: #ffffffbe;
+    background-color: #ffffffd0;
     transition: 0.5s linear;
 }
 .logo{
@@ -314,7 +313,39 @@ section{
 #projetos{
     background-color: var(--primaria);
 }
-
+#projetos ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#projetos .text3 {
+    width: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-size: 4em;
+    margin-top: 12rem;
+    color: var(--texto)
+}
+.iconhab{
+    position: absolute;
+    width: 20rem;
+    right: 10%;
+    padding: 1rem;
+}
+.iconhab ul li{
+    margin: 0.8rem;
+    list-style: none;
+    font-size: 7em;
+    color: var(--secundaria);
+}
+.iconhab ul li:hover{
+    color: var(--texto);
+    font-size: 9em;
+    transition: 0.3s  ease-out;
+}
 #contato{
     height: 35rem;
     background-color: var(--secundaria);
