@@ -91,7 +91,7 @@ nav{
 
 .navItems li{
     list-style: none;
-    margin: 0 2.5rem;
+    margin: 0 2rem;
 }
 
 .navItems li a{
@@ -205,46 +205,6 @@ nav{
 
 
 
-/* #star {
-    margin: 100px;
-    position: absolute;
-    z-index: 1000000;
-    display: block;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid #000;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-}
-#star:before {
-    border-bottom: 80px solid #000;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-}
-#star:after {
-    position: absolute;
-    display: block;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid #000;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-} */
-
-
 
 
 .seta{
@@ -310,48 +270,102 @@ section{
 
 
 
-#projetos{
+#habilidades{
     background-color: var(--primaria);
+    height: 42rem;
 }
-#projetos ul{
+#habilidades div{
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    padding: 1rem;
 }
-#projetos .text3 {
+#habilidades .text3 {
     width: 50%;
     display: flex;
     position: absolute;
     justify-content: center;
     font-size: 4em;
-    margin-top: 12rem;
+    margin-top: calc((42rem - 4em) /2);
     color: var(--texto)
 }
+
 .iconhab{
     position: absolute;
+    z-index: 1000;
     width: 20rem;
     right: 10%;
-    padding: 1rem;
 }
-.iconhab ul li{
+
+.iconhab div{    
+    position: absolute;
     margin: 0.8rem;
-    list-style: none;
     font-size: 7em;
+    color: var(--texto);
+}
+.hIcons1{
+    top: 3rem;
+    right: 0rem;
+}
+.hIcons2{
+    top: 3rem;
+    right: 15rem;
+}
+.hIcons3{
+    top: 3rem;
+    right: 30rem;
+}
+.hIcons4{
+    top: 15rem;
+}
+.hIcons5{
+    top: 30rem;
+}
+
+.iconhab div:hover{
+    color: var(--secundaria);
+    font-size: 9em;
+    transition: 0.3s  linear;
+    margin-right: -1rem;
+    filter:drop-shadow(10px 10px 1px #000000b6)
+}
+
+
+.bolhas {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+}
+.bolhas span{
+animation: animar calc(90s / var(--i)) linear infinite;
+}
+.bolhas span i{
+    font-size: 3em;
     color: var(--secundaria);
 }
-.iconhab ul li:hover{
-    color: var(--texto);
-    font-size: 9em;
-    transition: 0.3s  ease-out;
+
+@keyframes animar {
+0% { transform: translateY(90vh) scale(0);
 }
-#contato{
+100% { transform: translateY(-10vh) scale(1);
+}
+}
+
+
+
+#projetos{
+
     height: 35rem;
     background-color: var(--secundaria);
+}
+
+#contato{
+    height: 35rem;
+    background-color: var(--primaria);
 }
 #footer{
     width: 100%;
     height: 5rem;
-    background-color: var(--primaria);
+    background-color: var(--secundaria);
 }

@@ -1,4 +1,5 @@
 
+
 window.addEventListener("scroll", function(){
     var header = document.querySelector("nav");
     var seta = document.querySelector(".seta a img");
