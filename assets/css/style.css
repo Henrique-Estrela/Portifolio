@@ -45,6 +45,9 @@ body::-webkit-scrollbar-thumb {
 .none{
     display: none;
 }
+.block{
+    display: block;
+}
 
 .container{
     display: none;
@@ -322,20 +325,40 @@ section{
     top: 30rem;
 }
 
-.iconhab div:hover{
+.iconhab div:hover i{
     color: var(--secundaria);
-    font-size: 9em;
+    font-size: 1.2em;
     transition: 0.3s  linear;
     margin-right: -1rem;
     filter:drop-shadow(10px 10px 1px #000000b6)
 }
 
+.modalIcons{
+    width: 10rem;
+    height: 3rem;
+    margin-left: 11rem;
+    background-color: #e6e6e6b5;
+    color: var(--secundaria);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000000a9;
+    display: '';
+    pointer-events: none !important;
+    top: -2rem;
+    position: absolute;
+    display: '';
+}
 
 .bolhas {
     position: absolute;
     display: flex;
     z-index: 1;
     overflow: hidden;
+    height: 43rem;
+    width: 100%;
 }
 .bolhas span{
 animation: animar calc(90s / var(--i)) linear infinite;

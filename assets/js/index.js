@@ -26,6 +26,22 @@ function scrollToIdOnClick(event) {
     })
 };
 
+const icon = document.querySelectorAll('.iconhab div.hIcons ');
+
+icon.addEventListener("mouseover", (event) => {
+
+    var element = event.target;
+    const id2 = element.getAttribute('class');
+    console.log(id2)
+    // var modelicons =document.querySelector('.hIcons div');
+
+    // modelicons.style.display = 'none'
+});
+
+
+
+
+
 function loading() {
     document.querySelector(".telaLoad").style.display = "none";
     document.querySelector(".container").style.display = "block";
