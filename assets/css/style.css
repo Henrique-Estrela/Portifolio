@@ -275,7 +275,7 @@ section{
 
 #habilidades{
     background-color: var(--primaria);
-    height: 42rem;
+    height: 47rem;
 }
 #habilidades div{
     display: flex;
@@ -291,6 +291,19 @@ section{
     font-size: 4em;
     margin-top: calc((42rem - 4em) /2);
     color: var(--texto)
+}
+
+#habilidades .text3::after{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    content: '';
+    height: 4px;
+    width: 25rem;
+    border-radius: 5px;
+    background-color: var(--texto);
+    top: 8rem;
+    
 }
 
 .iconhab{
@@ -380,11 +393,163 @@ animation: animar calc(90s / var(--i)) linear infinite;
 
 
 
+
+
 #projetos{
 
-    height: 35rem;
+    height: auto;
     background-color: var(--secundaria);
 }
+#projetos .text4 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 6.5em;
+    margin-top: -6rem;
+    margin-bottom: 3rem;
+    color: var(--texto2);
+}
+#projetos .text4 h1::after{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    content: '';
+    height: 4px;
+    width: 20rem;
+    border-radius: 5px;
+    background-color: var(--texto2);
+    top: 131.5rem;
+    
+}
+
+.boxLoad{
+    display: flex;
+    justify-content: center;
+}
+#loadMore{
+    display: flex;
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+    border:0.5px solid #334;
+    color: var(--secundaria);
+    background-color: var(--primaria);
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000000a9;
+}
+.containerw {
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
+}
+.card-wrap {
+    margin: 10px;
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card-wrap:hover .card-info {
+    transform: translateY(0);
+}
+.card-wrap:hover .card-info p {
+    opacity: 1;
+}
+.card-wrap:hover .card-info, .card-wrap:hover .card-info p {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-wrap:hover .card-info:after {
+    transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-wrap:hover .card-bg {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0.8;
+}
+.card-wrap:hover .card {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+.card { 
+    position: relative;
+    flex: 0 0 240px;
+    width: 240px;
+    height: 320px;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.box{
+    display: none; 
+}
+.card-bg {
+    opacity: 0.5;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+}
+.card-info {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateY(40%);
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.card-info p {
+    opacity: 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.card-info * {
+    position: relative;
+    z-index: 1;
+}
+.card-info:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.card-info h1 {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+
+
+
+
+
+
+
+
 
 #contato{
     height: 35rem;
