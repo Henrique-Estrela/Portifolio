@@ -330,7 +330,11 @@ section{
     font-size: 1.2em;
     transition: 0.3s  linear;
     margin-right: -1rem;
-    filter:drop-shadow(10px 10px 1px #000000b6)
+    filter:drop-shadow(10px 10px 1px #000000b6);
+    visibility: visible;
+}
+.iconhab div:hover .modalIcons{
+    visibility: visible;
 }
 
 .modalIcons{
@@ -345,11 +349,10 @@ section{
     justify-content: center;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #000000a9;
-    display: '';
+    visibility: hidden;
     pointer-events: none !important;
     top: -2rem;
     position: absolute;
-    display: '';
 }
 
 .bolhas {
