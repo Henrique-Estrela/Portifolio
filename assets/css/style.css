@@ -819,7 +819,7 @@ footer {
   }
   
   .footer-links li a:hover {
-    color: var(--secundaria);
+    color:var(--texto2);
   }
   
   .copyright {
