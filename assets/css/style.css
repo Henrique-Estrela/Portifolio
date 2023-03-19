@@ -812,9 +812,10 @@ footer {
   .footer-links li a {
     color: var(--primaria);
     margin-right: 15px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    text-decoration: none;
   }
   
   .footer-links li a:hover {
