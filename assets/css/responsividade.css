@@ -1,0 +1,24 @@
+@media (max-width: 1250px) {
+    #habilidades{
+        height: 55rem;
+    }
+    .bolhas{
+        height: 49rem;
+        margin-top: -135px;
+    }
+    #projetos .text4 h1::after {
+        top:139.5rem;
+    }
+    #habilidades .text3 {
+        width: 100% ;
+        position: relative ;
+        margin-top: 0;
+    }
+    .iconhab{
+        right: none;
+        margin: auto 18%;
+
+    }
+
+
+}

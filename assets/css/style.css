@@ -96,7 +96,7 @@ nav{
 
 .navItems li{
     list-style: none;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .navItems li a{
@@ -132,7 +132,7 @@ nav{
 }
 .cols{
     width: 50%;
-    margin-bottom: -18rem;
+    margin-bottom: 5rem;
 }
 
 .topline{
@@ -172,14 +172,14 @@ nav{
 
 
 .imgbox{
-    position: relative;
-    left: 40rem;
+    position: absolute;
+    right: 6rem;
     }
 .imgbox img{
     position: relative;
     height: 100%;
     width: calc(90% - -64px);
-    top: -100px;
+    bottom: 31rem;
     right: 0;
     animation: User 4s linear infinite;
 }
@@ -188,7 +188,7 @@ nav{
 @keyframes User{
     50%{
         right: 20px;
-        top: -90px;
+        bottom: 29rem;
     }
 }
 
@@ -197,13 +197,14 @@ nav{
     height: 100%;
     position: absolute;
     display: flex;
+    bottom: 30rem;
     animation: Splash 5s linear infinite;
 
 }
 
 @keyframes Splash{
     50%{
-        top: -90px;
+        bottom: 29rem;
         right: -20px;
     }
 }
@@ -311,8 +312,8 @@ section{
 .iconhab{
     position: absolute;
     z-index: 1000;
-    width: 20rem;
-    right: 10%;
+    width: 37rem;
+    right: 5%;
 }
 
 .iconhab div{    
@@ -355,7 +356,6 @@ section{
 .modalIcons{
     width: 10rem;
     height: 3rem;
-    margin-left: 11rem;
     background-color: #e6e6e6b5;
     color: var(--secundaria);
     font-size: 25px;
