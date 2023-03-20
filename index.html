@@ -17,7 +17,11 @@
         <link rel="import" href="assets/fonts/Quantico.html">
         <link rel="import" href="assets/fonts/SIL.html">
     
-    <!-- bibliotecas -->
+    
+    <!-- sweetalert -->
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">    
 </head>
 <body onload="loading()" class=".body">
     <div class="telaLoad">
@@ -264,7 +268,7 @@
                         
                       </div>
                         <div class="contact-block">
-                            <form action="" id="contactForm">
+                            <form action="https://formsubmit.co/Henriqueestrela2004@gmail.com" method="POST" id="contactForm">
                                 <div class="row">
                                     <div class="boxenviar">
                                         <div class="form-group">
@@ -274,7 +278,7 @@
                                     </div>
                                     <div class="boxenviar">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Seu Email" id="email" class="form-control" name="imail" required data-error="Coloque seu email">
+                                            <input type="email" placeholder="Seu Email" id="email" class="form-control" name="imail" required data-error="Coloque seu email">
                                             <div class="help-block with-errors"></div>
                                         </div> 
                                     </div>
@@ -284,9 +288,11 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     <div class="submit-button">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contato">
                                         <button class="btn btn-common" id="submit" type="submit">Enviar</button>
+
                                         <div id="msgSubmit" class="hidden"></div> 
-                                        <div class="clearfix"></div> 
                                     </div>
                                     </div>
                                 </div>            
@@ -332,6 +338,7 @@
     <script src="assets/js/index.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         var typingEffect = new Typed(".multiText",{

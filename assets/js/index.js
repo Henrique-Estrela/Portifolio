@@ -35,9 +35,30 @@ function loading() {
 }
 
 
+const btn = document.querySelector('#submit');
 
+btn.addEventListener("click", function(e){
+    if (!document.querySelector('#email').value == "" && !document.querySelector('#name').value == "" && !document.querySelector('#message').value == ""){
 
+        console.log(document.querySelector('.boxenviar input').value)
+        Swal.fire({
+            title: 'Seu Email foi enviado com sucesso!',
+            icon: 'success',
+            iconColor: '#87007d',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            },
+            color: '#87007d',
+            showConfirmButton: false
 
+            
+        }).then((result) => {
+        document.querySelector('contactForm').submit();
+    })};
+})           
 
 
 
