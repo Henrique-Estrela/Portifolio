@@ -63,6 +63,15 @@
     .cols0 p{
         font-size: 1em;
     }
+    .hIcons1{
+        right: 10%;
+    }
+    .hIcons2{
+        right: 40%;
+    }
+    .hIcons3{
+        right: 73%;
+    }
 
 
 
@@ -71,6 +80,9 @@
 @media (max-width: 1050px) {
     #home{
         height: 35rem;
+    }
+    .seta{
+        display: none;
     }
     .imgbox{
         bottom: -19rem;
@@ -105,15 +117,10 @@
     .topline {
         font-size: 27px;
     }
-    .hIcons1{
-        right: 10%;
+    #projetos .text4 h1::after {
+        top: 132.5rem;
     }
-    .hIcons2{
-        right: 40%;
-    }
-    .hIcons3{
-        right: 73%;
-    }
+    
     
 }
 
@@ -232,9 +239,31 @@
         height: 2.6rem;
         font-size: 18px;
     }
+    #projetos .text4 h1{
+        font-size: 4.5em;
+    }
+    #projetos .text4 h1::after {
+        width: 14rem;
+        top: 114.7rem;
+    }
+    .containerw{
+        gap: 40px;
+    }
+    .card{
+        width: 180px;
+        height: 220px
+    }
+    .card-info h1 {
+        font-size: 27px;
+    }
+    .card-info p {
+        font-size: 14px;
+    }
 
 
-
+    footer{
+        font-size: 0.9em;
+    }
 
 
 
@@ -266,7 +295,7 @@
     }
     .text2 h1::after{
         width: 13rem;
-        top: 8rem;
+        top: 6.9rem;
     }
     .text2 p{
         font-size: 0.9em;
@@ -293,10 +322,15 @@
     .hIcons5{
         top: 18rem;
     }
+    #projetos .text4 h1::after {
+        top: 91.7rem;
+    }
 
    
-
-
+    
+    footer{
+        font-size: 0.7em;
+    }
 
 
 
@@ -333,6 +367,41 @@
         width: 9rem;
         top: 4rem;
     }
+    #habilidades{
+        height: 30rem;
+    }
+    .iconhab div {
+        font-size: 2.5em;
+    }
+    .modalIcons {
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 10px;
+    }
+    .hIcons4{
+        top: 8rem;
+
+    }
+    .hIcons5{
+        top: 14rem;
+    }
+    .iconhab div:hover i{
+        font-size: 1em;
+        margin-right: -0.1rem;
+        filter:drop-shadow(6px 6px 1px #000000b6);
+
+    }
+    #projetos .text4 h1 {
+        font-size: 2.5em;
+    }
+    #projetos .text4 h1::after {
+        top: 82.1rem;
+        width: 8rem;
+    }
+    .linksfooter{
+        display: none;
+    }
+
 
 
 
@@ -404,12 +473,40 @@
         width: 6rem;
         top: 5rem;
     }
+    #habilidades {
+        height: 27rem;
+    }
     #habilidades .text3 {
         font-size: 0.9em;
     }
     #habilidades .text3::after {
         width: 6rem;
         top: 3rem;
+    }
+    .iconhab div {
+        font-size: 1.5em;
+    }
+    #projetos .text4 h1::after {
+        width: 8rem;
+        top: 64.1rem;
+    }
+    .containerw{
+        gap: 20px;
+    }
+    .card{
+        width: 125px;
+        height: 165px;
+    }
+    .card-info h1 {
+        font-size: 20px;
+    }
+    .card-info p {
+        font-size: 7px;
+    }
+    .btn{
+        width: 7rem;
+        font-size: 1em;
+
     }
 
 }
