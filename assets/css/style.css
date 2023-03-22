@@ -254,7 +254,7 @@ section{
     height: 4px;
     width: 25rem;
     border-radius: 5px;
-    top: 12rem;
+    top: 13rem;
     background-color: var(--texto2);
 }
 
@@ -270,7 +270,7 @@ section{
 
 }
 .text2 p{
-    width: 52%;
+    width: 80%;
     margin-top: 2rem;
     font-size: 1.5em;
 }
@@ -314,7 +314,7 @@ section{
 .iconhab{
     position: absolute;
     z-index: 1000;
-    width: 37rem;
+    width: 100%;
     right: 5%;
 }
 

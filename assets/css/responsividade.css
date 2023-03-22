@@ -2,6 +2,7 @@
     #habilidades{
         height: 55rem;
     }
+    
     .bolhas{
         height: 49rem;
         margin-top: -135px;
@@ -11,8 +12,12 @@
     }
     #habilidades .text3 {
         width: 100% ;
+        padding-top: 1rem;
         position: relative ;
         margin-top: 0;
+    }
+    #habilidades .text3::after{
+        top: 9rem;
     }
     .iconhab{
         right: unset;
@@ -100,6 +105,15 @@
     .topline {
         font-size: 27px;
     }
+    .hIcons1{
+        right: 10%;
+    }
+    .hIcons2{
+        right: 40%;
+    }
+    .hIcons3{
+        right: 73%;
+    }
     
 }
 
@@ -118,6 +132,15 @@
     .cols0 p {
         font-size: 1.1rem;
         width: 130%;
+    }
+    .hIcons1{
+        right: 10%;
+    }
+    .hIcons2{
+        right: 40%;
+    }
+    .hIcons3{
+        right: 73%;
     }
 }
 
@@ -158,7 +181,63 @@
     }
     .imgbox{
         bottom: -20rem;
-      }
+    }
+
+    #sobremim{
+        height: 25rem;
+
+    }
+    .text2 h1{
+        font-size: 4.5em;
+        margin-top: -1rem;
+    }
+    .text2 h1::after{
+        width: 18rem;
+        top: 10rem;
+    }
+    .text2 p{
+        font-size: 1em;
+    }
+    #habilidades {
+        height: 50rem;
+    }    
+    #habilidades .text3 {
+        font-size: 3em;
+    }
+    #habilidades .text3::after {
+        width: 19rem;
+        top: 7rem;
+    }
+    .iconhab div {
+        font-size: 5em;
+    }
+    .hIcons1{
+        right: 10%;
+    }
+    .hIcons2{
+        right: 40%;
+    }
+    .hIcons3{
+        right: 73%;
+    }
+    .hIcons4{
+        top: 15rem;
+
+    }
+    .hIcons5{
+        top: 28rem;
+    }
+    .modalIcons {
+        width: 5.5rem;
+        height: 2.6rem;
+        font-size: 18px;
+    }
+
+
+
+
+
+
 }
 
 @media (max-width: 450px) {
@@ -178,16 +257,88 @@
     .imgbox{
         bottom: -15rem;
     }
-    @media (max-width: 350px)  {
-        .cols0 h1 {
-            font-size: 1.5em;
-        }
-        .cols0 p {
-            font-size: 0.6rem;
-            width: 130%;
-        }
+    #sobremim{
+        height: 20rem;
     }
+    .text2 h1{
+        font-size: 3.5em;
+        margin-top: -1rem;
+    }
+    .text2 h1::after{
+        width: 13rem;
+        top: 8rem;
+    }
+    .text2 p{
+        font-size: 0.9em;
+        margin-top:unset;
+    }
+    #habilidades .text3 {
+        font-size: 2.5em;
+    }
+    #habilidades .text3::after {
+        width: 15rem;
+        top: 6rem;
+    }
+    #habilidades {
+        height: 37rem;
+    }
+    .iconhab div {
+        font-size: 3.5em;
+    }
+   
+    .hIcons4{
+        top: 10rem;
+
+    }
+    .hIcons5{
+        top: 18rem;
+    }
+
+   
+
+
+
+
+
+
+
+    
  
+}
+
+@media (max-width: 350px)  {
+    .cols0 h1 {
+        font-size: 1.5em;
+    }
+    .cols0 p {
+        font-size: 0.6rem;
+        width: 130%;
+    }
+
+    .text2 h1{
+        font-size: 2.5em;
+        margin-top: -1rem;
+    }
+    .text2 h1::after{
+        width: 8rem;
+    }
+    .text2 p{
+        font-size: 0.7em;
+        margin-top:unset;
+    }
+    #habilidades .text3 {
+        font-size: 1.5em;
+    }
+    #habilidades .text3::after {
+        width: 9rem;
+        top: 4rem;
+    }
+
+
+
+
+
+
 }
 
 @media (max-width: 250px) {
@@ -236,6 +387,29 @@
             bottom: 32rem;
             right: -3rem;
         }
+    }
+    #sobremim{
+        height: 15rem;
+    }
+    .text2 h1{
+        font-size: 1.5em;
+        margin-top: -1rem;
+    }
+    .text2 p{
+        font-size: 0.5em;
+        margin-top:unset;
+    }
+
+    .text2 h1::after{
+        width: 6rem;
+        top: 5rem;
+    }
+    #habilidades .text3 {
+        font-size: 0.9em;
+    }
+    #habilidades .text3::after {
+        width: 6rem;
+        top: 3rem;
     }
 
 }
