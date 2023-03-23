@@ -120,8 +120,39 @@
     #projetos .text4 h1::after {
         top: 132.5rem;
     }
-    
-    
+    #contato{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .boxContato{
+        flex-direction: column;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-us h3 {
+        position: unset;
+        margin-top: -3rem;
+    }
+    .boxinfo{
+        display: none;
+    }
+    .social-icons2{
+        display: block;
+    }
+    .social-icons2 ul{
+        margin-top: -1rem;
+    }
+    .footer-links li a{
+        display: none;
+    }
+    .social-icons ul li a{
+        background: unset;
+    }
+    .instagram a ,  .github a , .whatsapp a ,  .linkedin a {
+        color: var(--texto2);
+    }
 }
 
 @media (max-width: 850px) {
@@ -148,6 +179,13 @@
     }
     .hIcons3{
         right: 73%;
+    }
+    .contact-block {
+        margin-bottom: 4rem;
+    }
+    .form-group{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -259,8 +297,10 @@
     .card-info p {
         font-size: 14px;
     }
-
-
+    .contact-block {
+        padding: unset;
+    }
+   
     footer{
         font-size: 0.9em;
     }
@@ -325,7 +365,12 @@
     #projetos .text4 h1::after {
         top: 91.7rem;
     }
-
+    .contact-us h3 {
+        font-size: 2em;
+    }
+    .contact-us h3::after {
+        margin-top: 1rem;
+    }
    
     
     footer{
