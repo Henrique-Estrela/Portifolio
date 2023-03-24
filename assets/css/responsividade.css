@@ -153,6 +153,12 @@
     .instagram a ,  .github a , .whatsapp a ,  .linkedin a {
         color: var(--texto2);
     }
+
+    
+
+
+
+
 }
 
 @media (max-width: 850px) {
@@ -181,7 +187,7 @@
         right: 73%;
     }
     .contact-block {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .form-group{
         display: flex;
@@ -299,10 +305,26 @@
     }
     .contact-block {
         padding: unset;
+        width: auto;
     }
-   
+    .boxenviar input, .boxenviar textarea{
+        width: 75vw;
+    }
     footer{
         font-size: 0.9em;
+        
+    }
+    footer p{
+        width: 50vw;
+    }
+    .social-icons ul li a{
+        font-size: 1em;
+        margin-left: 0.8rem;
+        width: unset;
+        height: unset;
+    }
+    .bolhas {
+        height: 45rem;
     }
 
 
@@ -370,6 +392,15 @@
     }
     .contact-us h3::after {
         margin-top: 1rem;
+    }
+    .bolhas {
+        height: 33.3rem;
+    }
+    @keyframes animar {
+        0% { transform: translateY(50vh) scale(0);
+        }
+        100% { transform: translateY(-5vh) scale(1);
+        }
     }
    
     
@@ -443,10 +474,39 @@
         top: 82.1rem;
         width: 8rem;
     }
-    .linksfooter{
+    .linksfooter .footer-links{
         display: none;
     }
-
+    .contact-us h3 {
+        font-size: 1.5em;
+    }
+    .contact-us h3::after {
+        margin-left: 1rem;
+    }
+    .social-icons ul li a{
+        font-size: 1em;
+        margin-left: 0.8rem;
+        width: unset;
+        height: unset;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+    }
+    footer p{
+        margin-bottom: 1rem;
+    }
+    .bolhas {
+        height: 28.3rem;
+    }
+    #home {
+        height: 20rem;
+    }
+    .imgbox {
+        bottom: -5rem;
+    }
 
 
 
@@ -481,7 +541,7 @@
     .imgbox img{
         
         bottom: 35rem;
-        right: -4rem;
+        right: -2rem;
 
     }
     #splash{
@@ -492,7 +552,7 @@
     }
     @keyframes User{
         50%{
-            right: -5rem;
+            right: -3rem;
             bottom: 34rem;
         }
     }    
@@ -553,5 +613,22 @@
         font-size: 1em;
 
     }
+    .contact-us h3 {
+        font-size: 1em;
+    }
+    .contact-us h3::after {
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .bolhas {
+        height: 26.5rem;
+    }
+    #home {
+        height: 12rem;
+    }
+    .imgbox {
+        bottom: -10rem;
+    }
+
 
 }
