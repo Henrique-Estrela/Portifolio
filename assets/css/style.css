@@ -52,26 +52,28 @@ body::-webkit-scrollbar-thumb {
 .container{
     display: none;
 }
-li {
+
+  a , li , ul{
     list-style-type: none;
-  }
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-nav{
+nav , .navbar{
     display: flex;
     width: 100%;
     justify-content: space-around;
     height: 80px;
     line-height: 80px;
-    z-index: 111;
+    z-index: 2000000;
     position: absolute;
     margin-top: -80px;
+}
+.navbar-p {
+    display: none;
+}
+
+.navbar{
+display: none;
 }
 
 .navfixed{
@@ -80,6 +82,117 @@ nav{
     background-color: #ffffffd0;
     transition: 0.5s linear;
 }
+
+
+ .menu-card{
+    z-index: 105;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    height: 62px;
+    width: 50px;
+    transition: all 5s;
+    transform: translateX();
+    }
+    
+    .menu-card span{
+    z-index: -11;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--secundaria);
+    transition: 0.25s ease-in-out;
+    
+    }
+    /* .container-card{
+        pointer-events: none;
+    } */
+    .menu-card span:nth-child(1){
+    top: 0;
+    
+    }
+    
+    .menu-card span:nth-child(2){
+    top: 15px;
+    
+    }
+    
+    .menu-card span:nth-child(3){
+    top: 30px;
+    }
+    
+    #checkbox-menu:checked + .menu-card span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+    
+    
+    }
+    
+    #checkbox-menu:checked + .menu-card span:nth-child(2){
+    opacity: 0;
+    }
+    
+    #checkbox-menu:checked + .menu-card span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+    }
+    
+    .espaco{
+      transition: 1s;
+      transform: translateX( 13rem);
+     
+     }
+     #checkbox-menu{
+        display: none !important;
+     }
+
+     .navbar-p{
+        margin-top: -1rem;
+        visibility: hidden;
+        z-index: 10000;
+        position: fixed;
+        background-color: var(--primaria);
+        width: 100%;
+        top: -30rem;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        transition: all 1s;
+        transform: translateY();
+        overflow: hidden;
+     }
+     .active{
+        top: 6rem ;
+        visibility: visible;
+     }
+     .link-p{
+        margin: 1rem;
+        height: 4rem;
+     }
+     .link-p:hover{
+        background-color: var(--texto2);
+     }
+     .btn2{
+        margin-top: 4.5rem;
+        width: 20vw;
+        height: 10vh;
+        border-radius: 20px;
+        color: var(--texto2);
+        background-color: var(--secundaria);
+        border: none;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+
 .logo{
     display: flex;
     font-size: 2em;

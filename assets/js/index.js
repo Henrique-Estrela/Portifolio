@@ -1,10 +1,16 @@
 window.addEventListener("scroll", function(){
     var header = document.querySelector("nav");
+    var header2 = document.querySelector(".navbar");
+    var header3 = document.querySelector(".navbar-p");
     var seta = document.querySelector(".seta a img");
+
     header.classList.toggle("navfixed", window.scrollY > 0);
+    header2.classList.toggle("navfixed", window.scrollY > 0);
+    header3.classList.toggle("navfixed", window.scrollY > 0);
+
+
     seta.classList.toggle("none", window.scrollY > 500);
 })
-
 
 
 const menuItems = document.querySelectorAll('.nav ul li a[href^="#"]');
@@ -61,5 +67,16 @@ btn.addEventListener("click", function(e){
 })           
 
 
+
+function navbar() {
+    var nav = document.querySelector('.navbar-p');
+    let checkboxmenu = document.querySelector('#checkbox-menu'); 
+     if (checkboxmenu.checked == false) {
+        nav.classList.add('active');
+        
+    }else{
+        nav.classList.remove('active');
+    }
+}
 
 

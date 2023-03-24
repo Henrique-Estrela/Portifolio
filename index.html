@@ -46,6 +46,43 @@
             </div>
         </nav>
 
+        <nav class="navbar">
+            <div class="flex" >
+              <a class="flex centralize-cima" href="#">
+                <div class="logo">Henrique.E</div>
+            </a>
+            </div>
+            
+            <div class="container-card">
+                <input type="checkbox" id="checkbox-menu">
+    
+                <label for="checkbox-menu" class="menu-card" id="btn2" onclick="navbar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div> 
+        </nav>
+
+        <div class="navbar-p">
+
+            <div class="">
+                <ul class="navItems">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobremim">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/henrique-estrela-21163921a/"> <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Henrique-Estrela"> <i class="fab fa-github" aria-hidden="true"></i></a>
+    
+                </div>
+            </div>
+    
+        </div>
+
         <main id="home">
             <div class="apresentacao">
                 <div class="cols cols0">
@@ -444,7 +481,7 @@
         $(document).ready(function(){
             var num = 3
             var cardTotal = document.querySelectorAll('.containerw .box')
-            $(".box").slice (0, num).fadeIn();
+            $(".box").slice(0, num).fadeIn();
             $("#loadMore").click(function(){
                 num += 3
                 $(".box").slice (0, num).fadeIn();
@@ -454,7 +491,6 @@
                     $(this).fadeOut();
                 }
             });
-            
         });
     </script>
     
