@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Rubik Bubbles', cursive;
+    font-family: 'Rubik Bubbles', Times, serif;
 }
 html{
     scroll-behavior: smooth;
