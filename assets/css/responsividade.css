@@ -204,6 +204,8 @@
     }
     .cols0 p {
         font-size: 1.1rem;
+        margin-top: 1rem;
+        font-weight: 900;
         width: 130%;
     }
     .hIcons1{
@@ -361,18 +363,19 @@
 }
 
 @media (max-width: 450px) {
-    *{
-        font-family: unset ;
-    }
+   
     .topline {
         font-size: 20px;
+    }
+    .topline::after{
+        bottom: 0px;
     }
     .cols0 h1 {
         font-size: 2.5em;
     }
     .cols0 p {
-        font-size: 0.7rem;
-        width: 130%;
+        font-size: 0.9rem;
+        width: 150%;
     }
     #home{
         height: 30rem;
