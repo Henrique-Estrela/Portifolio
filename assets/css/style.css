@@ -352,6 +352,8 @@ section{
     color: var(--texto2);
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
 .text2 h1{
