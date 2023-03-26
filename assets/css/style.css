@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Rubik Bubbles', cursive, sans-serif ;
+    font-family:cursive;
 }
 html{
     scroll-behavior: smooth;
