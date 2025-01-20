@@ -568,7 +568,7 @@ animation: animar calc(90s / var(--i)) linear infinite;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 110px;
+    gap: 30px;
 }
 .card-wrap {
     margin: 10px;

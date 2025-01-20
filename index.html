@@ -276,6 +276,30 @@
                     </a>
                 </div> 
                 <div class="box">
+                    <a href="https://denilsonsantos-ofc.github.io/unex-studyflow/front-end/">
+                        <card data-image="assets/img/StudyFlow.png">
+                            <h1 slot="header">StudyFlow</h1>
+                            <p slot="content">Ferramenta para organização acadêmica e gestão universitária.</p>
+                        </card>
+                    </a>
+                </div> 
+                <div class="box">
+                    <a href="https://github.com/Henrique-Estrela/My_Little_Joy_Api">
+                        <card data-image="assets/img/MyLittleJoy.png">
+                            <h1 slot="header">MyLittleJoy</h1>
+                            <p slot="content">Sua estante de livros virtual. <br> (Em Desenvolvimento)</p>
+                        </card>
+                    </a>
+                </div> 
+                <div class="box">
+                    <a href="">
+                        <card data-image="assets/img/LegendsGather.png">
+                            <h1 slot="header">Legends Gather</h1>
+                            <p slot="content">Projetos para amantes de RPG. <br> (Em Desenvolvimento)</p>
+                        </card>
+                    </a>
+                </div>
+                <div class="box">
                     <a href="">
                         <card data-image="assets/img/EmBreve.png">
                             <h1 slot="header">Em Breve</h1>
@@ -494,11 +518,11 @@
   
 
         $(document).ready(function(){
-            var num = 3
+            var num = 4
             var cardTotal = document.querySelectorAll('.containerw .box')
             $(".box").slice(0, num).fadeIn();
             $("#loadMore").click(function(){
-                num += 3
+                num += 4
                 $(".box").slice (0, num).fadeIn();
                 document.querySelector('#projetos').style.height + '70rem';
                 
